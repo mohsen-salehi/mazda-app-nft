@@ -1,0 +1,28 @@
+
+.nft_header {
+    color: #FFF;
+    font-family: 'Lexend Giga';
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.mint_nft {
+    color: #FFF;
+    font-family: 'Lexend Giga';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.car_details {
+    color: #FFF;
+    font-family: 'Lexend Giga';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}

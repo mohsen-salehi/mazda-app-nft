@@ -1,0 +1,54 @@
+.text_weekly_board {
+    font-family: 'Lexend Giga', sans-serif;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    mix-blend-mode: hard-light;
+    display: inline-block;
+    position: relative;
+    -webkit-text-stroke: 1.5px #7BABFF;
+    text-stroke: 1.5px #7BABFF;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    color: transparent;
+    transition: opacity 0.4s;
+    line-height: 1.15;
+}
+
+.marquee {
+    background: url('/img/boardBg.png');
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: relative;
+    overflow: hidden;
+    --offset: 60vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-100% + var(--offset));
+}
+
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 15s linear infinite;
+}
+
+.marquee span {
+    font-size: 10vw;
+    padding: 0 3vw;
+}
+
+.marquee .marquee__inner {
+    animation-play-state: running;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}

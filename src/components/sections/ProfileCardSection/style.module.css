@@ -1,0 +1,17 @@
+.minting {
+    color: #FFF;
+    font-family: 'Lexend Giga', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.user_name {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+}

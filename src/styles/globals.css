@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background: linear-gradient(90deg, #1A1A1A 0%, #0D0B13 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: 'Lexend Giga', sans-serif;
+  background: linear-gradient(90deg, #1A1A1A 0%, #0D0B13 100%);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #0D0B13;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3680FF;
+
+  /* roundness of the scroll thumb */
+  border: 3px solid linear-gradient(90deg, #1A1A1A 0%, #0D0B13 100%);
+  /* creates padding around scroll thumb */
+}
+
+.heroSlider {
+  height: 803px;
+}
+
+body {
+  cursor: url('/img/icons/cursor.png') 4 12, auto;
+}
+
+a:hover,
+button:hover {
+  cursor: url('/img/icons/pointer.png') 4 12, pointer;
+}
